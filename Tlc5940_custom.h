@@ -50,7 +50,7 @@
 
 extern volatile uint8_t tlc_needXLAT;
 extern volatile void (*tlc_onUpdateFinished)(void);
-extern uint8_t tlc_GSData[15][NUM_TLCS * 24];
+extern uint8_t tlc_GSData[DATABUFFERS][NUM_TLCS * 24];
 
 /** The main Tlc5940 class for the entire library.  An instance of this class
     will be preinstantiated as Tlc. */
