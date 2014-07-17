@@ -1,6 +1,6 @@
 #include "TLC5940_panel.h"
 #include "Adafruit_GFX.h"
-#include <Tlc5940.h>
+#include "Tlc5940_custom.h"
 
 int8_t width = 15;
 int8_t height = 8;
