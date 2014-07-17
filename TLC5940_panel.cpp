@@ -25,7 +25,7 @@ void TLC5940_panel::display_col(uint8_t col){
 	Tlc.setActiveBuffer(15); // "special buffer"
 	Tlc.update();
 	//choose column mosfet
-	PORTC = (1 << col);
+	PORTC = ~(1 << col);
 	//Display the right buffer
 	Tlc.setActiveBuffer(col);
 	Tlc.update();
