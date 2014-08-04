@@ -19,7 +19,7 @@ void TLC5940_panel::drawPixel(int16_t x, int16_t y, uint16_t brightness){
 }
 
 void TLC5940_panel::display_row(uint8_t row){
-	//choose column mosfet
+	//Turn off mosfets
 	PORTC = 0xFF;
 	//Display the right buffer
 	Tlc.setActiveBuffer(row);
