@@ -14,12 +14,12 @@ class TLC5940_panel : public Adafruit_GFX{
 public:
 	TLC5940_panel(uint8_t width, uint8_t height);
 
-	void update_next_col();
+	void update_next_row();
 	void drawPixel(int16_t x, int16_t y, uint16_t color);
 
 private:
-	uint8_t curr_col;
-	void display_col(uint8_t col);
+	uint8_t curr_row;
+	void display_row(uint8_t row);
 	uint16_t *matrixbuff;
 
 };

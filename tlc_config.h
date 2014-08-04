@@ -23,7 +23,7 @@
 
 
 //CUSTOM
-#define DATABUFFERS 16 //Width of the panel + 1 empty buffer
+#define DATABUFFERS 9 //Height of the panel + 1 empty buffer
 ///
 
 /** \file
