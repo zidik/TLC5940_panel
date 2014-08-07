@@ -20,5 +20,5 @@ void loop()
   //Add your code here
   //
   panel.update_next_row();	
-  delay(5);
+  delay(1);
 }

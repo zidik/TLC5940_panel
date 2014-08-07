@@ -28,6 +28,8 @@ void TLC5940_panel::display_row(uint8_t row){
 	//Display the right buffer
 	Tlc.setActiveBuffer(row);
 	Tlc.update();
+	//Wait until update latches
+	while (tlc_needXLAT);
 	//choose column mosfet - set it low
 	if (row >= 0 && row < 6)
 		PORTC &= ~(1 << row);
